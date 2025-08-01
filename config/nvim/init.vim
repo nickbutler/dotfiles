@@ -260,11 +260,11 @@ nmap <C-\> gcip
 
 Plug 'lewis6991/gitsigns.nvim'
 
-Plug 'codeindulgence/vim-ranger'
+Plug 'nickbutler/vim-ranger'
 let g:ranger_on_exit = 'bw!'
 let g:ranger_open_mode = 'edit'
 
-Plug 'codeindulgence/vim-tig'
+Plug 'nickbutler/vim-tig'
 let g:tig_executable = 'fish -c "tmuxpasskey dont tig status"'
 let g:tig_default_command = ''
 nnoremap <silent><C-G> :Tig<CR>

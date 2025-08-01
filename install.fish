@@ -11,7 +11,7 @@ function check_dotfiles
     cd $dotfile_dir
     and git pull origin master
   else
-    git clone https://github.com/codeindulgence/dotfiles.git $dotfile_dir
+    git clone https://github.com/nickbutler/dotfiles.git $dotfile_dir
   end
 end
 

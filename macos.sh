@@ -4,7 +4,7 @@ mkdir -p ~/code/{work,projects,community,hello,courses}
 mkdir -p ~/.config
 
 if [ ! -d $dotfile_path ]; then
-  git clone https://github.com/codeindulgence/dotfiles.git $dotfile_path
+  git clone https://github.com/nickbutler/dotfiles.git $dotfile_path
 fi
 ln -sf $dotfile_path ~/.config/dotfiles
 
