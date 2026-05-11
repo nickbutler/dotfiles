@@ -25,10 +25,6 @@ function fzf-recent-widget
   commandline -f repaint
 end
 
-bind -k backspace \
-  'test (commandline) = ""; \
-    and tmuxpasskey do fzf-recent-widget; \
-    or commandline -f backward-delete-char'
 bind \ct 'tmuxpasskey do fzf-file-widget'
 bind \cr 'tmuxpasskey do fzf-history-widget'
 bind \ec 'tmuxpasskey do fzf-cd-widget'
