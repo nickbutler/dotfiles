@@ -154,7 +154,6 @@ Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'jamessan/vim-gnupg'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-dadbod'
