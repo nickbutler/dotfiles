@@ -22,6 +22,7 @@
         "color" : "#D6DDEAFF"
       },
       "iconPaddingHorizontal" : 4,
+      "roundness" : 0,
       "paddingVertical" : 3,
       "iconSize" : 23
     },
@@ -30,8 +31,8 @@
       "thickness" : 0
     },
     "search" : {
-      "paddingVertical" : 0,
-      "background" : "#2B324000",
+      "backgroundSelected" : "#B3D7FFFF",
+      "paddingHorizontal" : 8,
       "spacing" : 4,
       "text" : {
         "size" : 24,
@@ -39,7 +40,9 @@
         "font" : "Avenir",
         "color" : "#D6DDEAFF"
       },
-      "backgroundSelected" : "#B3D7FFFF"
+      "background" : "#2B324033",
+      "roundness" : 0,
+      "paddingVertical" : 0
     },
     "scrollbar" : {
       "color" : "#394153FF",
@@ -53,7 +56,7 @@
       "borderPadding" : 0,
       "borderColor" : "#2C3341FF",
       "blur" : 0,
-      "roundness" : 12,
+      "roundness" : 4,
       "paddingVertical" : 11
     }
   }
