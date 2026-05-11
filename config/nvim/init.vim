@@ -235,14 +235,7 @@ Plug 'ollykel/v-vim', { 'for': 'v' }
 let g:v_autofmt_bufwritepre = 1
 autocmd Filetype vlang setlocal listchars+=tab:\ \ 
 
-Plug 'vim-airline/vim-airline'
-let g:airline_powerline_fonts = 1
-let g:airline_detect_spelllang = 0
-let g:airline#extensions#whitespace#enabled = 0
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-let g:airline_symbols.dirty=''
+Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'tpope/vim-commentary'
 autocmd FileType terraform setlocal commentstring=#\ %s
@@ -289,7 +282,6 @@ autocmd FileType vim-plug,ranger,tig set
   \| autocmd BufLeave <buffer> set
   \ showtabline=2 laststatus=2 number relativenumber signcolumn=yes
 autocmd FileType gitcommit set nonumber norelativenumber
-  \| let g:airline#extensions#tabline#enabled = 0
 
 " Filetypes
 autocmd BufEnter *.fish set filetype=fish
