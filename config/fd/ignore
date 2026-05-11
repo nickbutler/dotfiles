@@ -69,6 +69,7 @@ metals.sbt
 
 ### Elixir ###
 /_build
+/build
 /cover
 /deps
 /doc
