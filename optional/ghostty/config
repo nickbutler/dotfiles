@@ -1,0 +1,110 @@
+# Docs: https://ghostty.org/docs/config/reference
+
+font-family = Hermit
+font-size = 12
+
+window-padding-x = 20
+window-padding-y = 20
+background-opacity = 0.96
+
+# macOS
+macos-titlebar-style = hidden
+macos-option-as-alt = true
+macos-quit-when-last-window-closed = true
+font-thicken = true
+
+# Colors (Nordfox)
+background = #2e3440
+foreground = #cdcecf
+selection-background = #3e4a5b
+selection-foreground = #cdcecf
+cursor-color = #cdcecf
+cursor-text = #2e3440
+
+# normal
+palette = 0=#3b4252
+palette = 1=#bf616a
+palette = 2=#a3be8c
+palette = 3=#ebcb8b
+palette = 4=#81a1c1
+palette = 5=#b48ead
+palette = 6=#88c0d0
+palette = 7=#e5e9f0
+
+# bright
+palette = 8=#465780
+palette = 9=#d06f79
+palette = 10=#b1d196
+palette = 11=#f0d399
+palette = 12=#8cafd2
+palette = 13=#c895bf
+palette = 14=#93ccdc
+palette = 15=#e7ecf4
+
+# extended
+palette = 16=#c9826b
+palette = 17=#bf88bc
+
+keybind = clear
+
+keybind = cmd+v=paste_from_clipboard
+keybind = cmd+enter=toggle_fullscreen
+keybind = cmd+equal=increase_font_size:2
+keybind = cmd+minus=decrease_font_size:2
+keybind = cmd+zero=reset_font_size
+
+# cmd+letter -> ESC+letter (alt-key equivalents)
+keybind = cmd+a=esc:a
+keybind = cmd+b=esc:b
+keybind = cmd+c=esc:c
+keybind = cmd+f=esc:f
+keybind = cmd+j=esc:j
+keybind = cmd+k=esc:k
+keybind = cmd+n=esc:n
+keybind = cmd+p=esc:p
+keybind = cmd+r=esc:r
+keybind = cmd+w=esc:w
+keybind = cmd+one=esc:1
+keybind = cmd+two=esc:2
+keybind = cmd+three=esc:3
+keybind = cmd+four=esc:4
+keybind = cmd+five=esc:5
+keybind = cmd+period=esc:.
+keybind = cmd+comma=esc:,
+
+# F1-F5 via ctrl+number
+keybind = ctrl+one=esc:OP
+keybind = ctrl+two=esc:OQ
+keybind = ctrl+three=esc:OR
+keybind = ctrl+four=esc:OS
+keybind = ctrl+five=csi:15~
+
+# F6-F10
+keybind = ctrl+six=csi:17~
+keybind = ctrl+seven=csi:18~
+keybind = ctrl+eight=csi:19~
+keybind = ctrl+nine=csi:20~
+keybind = ctrl+zero=csi:21~
+
+# F6-F10 alternates
+keybind = ctrl+backspace=csi:17~
+keybind = ctrl+period=csi:18~
+keybind = ctrl+apostrophe=csi:19~
+keybind = ctrl+semicolon=csi:20~
+keybind = ctrl+tab=csi:21~
+
+# F11-F12
+keybind = ctrl+enter=csi:23~
+keybind = shift+enter=csi:24~
+
+keybind = ctrl+shift+f5=reload_config
+
+# Dropped (no clean ghostty equivalent):
+#   dynamic_background_opacity / set_background_opacity bindings
+#     - ghostty opacity is startup-only
+#   macos_traditional_fullscreen
+#     - default is native fullscreen; set macos-non-native-fullscreen = true if needed
+#   url_color, active/inactive border, active/inactive tab colors
+#     - ghostty uses native macOS chrome for these
+#   kitten hints (cmd+shift+u/f/o/x)
+#     - no built-in URL/path/hash picker; consider a tmux-based picker if you need it

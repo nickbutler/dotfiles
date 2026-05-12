@@ -34,28 +34,52 @@ function check_programs
   return $warning
 end
 
+# Link a single source path to a destination.
+# - Skips if destination is already correctly linked.
+# - Backs up any existing file, directory, or wrong symlink before replacing.
+function symlink_one
+  set -l source (realpath $argv[1])
+  set -l dest $argv[2]
+
+  if test -L $dest; and test (realpath $dest 2>/dev/null) = $source
+    ok
+    return
+  end
+
+  if test -e $dest; or test -L $dest
+    echo -n -s (set_color yellow) "Backing up. "
+    mv $dest $dest.(date +%s).bak
+  end
+
+  ln -sf $source $dest
+  ok
+end
+
 function symlink_configs
   set -l config_path $dotfile_dir/config
 
   for program_path in $config_path/*
     set -l program (basename $program_path)
-    set -l install_path ~/.config/$program
     echo -n "Linking $program: "
+    symlink_one $program_path ~/.config/$program
+  end
+  echo
+end
 
-    if begin
-        [ -d $install_path ];
-        and [ (readlink -f $install_path) != (readlink -f $config_path/$program) ]
-      end
+function symlink_others
+  set -l optional_path $dotfile_dir/optional
 
-     echo -n -s (set_color yellow) "Backing up $program config. "
-     mv $install_path $install_path.(date +%s).bak
-   end
-
-   ln -sf $config_path/$program ~/.config
-
-   ok
- end
- echo
+  echo "Optional configs:"
+  for program_path in $optional_path/*/
+    set -l program (basename $program_path)
+    read -n1 -P "  Link $program? [y/N] " choice
+    echo
+    if string match -q y $choice
+      echo -n "  Linking $program: "
+      symlink_one $program_path ~/.config/$program
+    end
+  end
+  echo
 end
 
 function install_base16
@@ -74,6 +98,7 @@ check_dotfiles
 and check_programs
 or continue_anyway
 and symlink_configs
+and symlink_others
 and install_base16
 
 and echo -s (set_color green) "Cool, we're done. You can run `fish` or set it as your default with `chsh -s ...`. Enjoy!"
