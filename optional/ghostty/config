@@ -10,7 +10,7 @@ background-opacity = 0.96
 # macOS
 macos-titlebar-style = hidden
 macos-option-as-alt = true
-macos-quit-when-last-window-closed = true
+quit-after-last-window-closed = true
 font-thicken = true
 
 # Colors (Nordfox)
