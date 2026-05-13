@@ -263,6 +263,7 @@ nnoremap <silent><C-L> :TmuxNavigateRight<cr>
 call plug#end()
 
 " Colours
+lua require('nightfox').setup({ options = { transparent = true } })
 colorscheme nordfox
 highlight ErrorMsg guibg=NONE guifg=#BF616A
 highlight WarningMsg guibg=NONE guifg=#EBCB8B
