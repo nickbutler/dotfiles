@@ -33,6 +33,7 @@
   amend = "commit --amend -C HEAD"
   soft = "reset --soft HEAD^"
   hard = "reset --hard"
+  mad = "!git checkout main && git merge - && git branch -d @{-1}"
 [credential]
   helper = osxkeychain
 [diff]

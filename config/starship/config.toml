@@ -63,6 +63,7 @@ format = "[$hostname](8)  "
 
 [java]
 symbol = " "
+format = " [$symbol($version )](red)"
 
 [julia]
 symbol = " "

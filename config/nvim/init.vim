@@ -154,7 +154,6 @@ Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'jamessan/vim-gnupg'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-dadbod'
@@ -163,9 +162,6 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
-Plug 'williamboman/mason.nvim'
-Plug 'williamboman/mason-lspconfig.nvim'
-Plug 'neovim/nvim-lspconfig'
 
 Plug 'jiangmiao/auto-pairs'
 let g:AutoPairsShortcutFastWrap = '<C-]>'
@@ -226,11 +222,7 @@ function! PwdHistoryOrFiles()
 endfunction
 command! PwdHistory call PwdHistory()
 
-Plug 'arcticicestudio/nord-vim'
-let g:nord_uniform_diff_background = 1
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
-let g:nord_underline = 1
+Plug 'EdenEast/nightfox.nvim'
 
 Plug 'simrat39/symbols-outline.nvim'
 nnoremap <silent><F6> :SymbolsOutline<CR>
@@ -243,14 +235,7 @@ Plug 'ollykel/v-vim', { 'for': 'v' }
 let g:v_autofmt_bufwritepre = 1
 autocmd Filetype vlang setlocal listchars+=tab:\ \ 
 
-Plug 'vim-airline/vim-airline'
-let g:airline_powerline_fonts = 1
-let g:airline_detect_spelllang = 0
-let g:airline#extensions#whitespace#enabled = 0
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-let g:airline_symbols.dirty=''
+Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'tpope/vim-commentary'
 autocmd FileType terraform setlocal commentstring=#\ %s
@@ -278,12 +263,12 @@ nnoremap <silent><C-L> :TmuxNavigateRight<cr>
 call plug#end()
 
 " Colours
-colorscheme nord
+colorscheme nordfox
 highlight ErrorMsg guibg=NONE guifg=#BF616A
 highlight WarningMsg guibg=NONE guifg=#EBCB8B
 highlight SpellBad guifg=NONE
-highlight Search guibg=#434C5E guifg=NONE
-highlight IncSearch guibg=#434C5E guifg=NONE gui=bold
+highlight Search guibg=#3e4a5b guifg=NONE
+highlight IncSearch guibg=#3e4a5b guifg=NONE gui=bold
 highlight DiffAdd guibg=NONE
 highlight DiffChange guibg=NONE
 highlight DiffDelete guibg=NONE
@@ -297,7 +282,6 @@ autocmd FileType vim-plug,ranger,tig set
   \| autocmd BufLeave <buffer> set
   \ showtabline=2 laststatus=2 number relativenumber signcolumn=yes
 autocmd FileType gitcommit set nonumber norelativenumber
-  \| let g:airline#extensions#tabline#enabled = 0
 
 " Filetypes
 autocmd BufEnter *.fish set filetype=fish

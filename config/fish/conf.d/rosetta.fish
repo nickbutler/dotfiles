@@ -1,9 +1,7 @@
 if test (arch) = "i386"
   set HOMEBREW_PREFIX /usr/local
-  set -x PYENV_ROOT ~/.pyenv-intel
 else
   set HOMEBREW_PREFIX /opt/homebrew
-  set -x PYENV_ROOT ~/.pyenv
 end
 
 # Add the Homebrew prefix to $PATH. -m flag ensures it's at the beginning
