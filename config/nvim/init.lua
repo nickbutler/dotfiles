@@ -200,6 +200,21 @@ vim.api.nvim_create_autocmd('FileType', {
 -- fzf
 vim.g.fzf_layout = { window = { width = 0.95, height = 0.75 } }
 vim.g.fzf_history_dir = '~/.local/share/fzf-history'
+vim.g.fzf_colors = {
+  fg      = { 'fg', 'Normal' },
+  bg      = { 'bg', 'Normal' },
+  hl      = { 'fg', 'Directory' },
+  ['fg+'] = { 'fg', 'Normal' },
+  ['bg+'] = { 'bg', 'Visual' },
+  ['hl+'] = { 'fg', 'Title' },
+  info    = { 'fg', 'Comment' },
+  border  = { 'fg', 'LineNr' },
+  prompt  = { 'fg', 'Function' },
+  pointer = { 'fg', 'Special' },
+  marker  = { 'fg', 'Keyword' },
+  spinner = { 'fg', 'Comment' },
+  header  = { 'fg', 'Comment' },
+}
 
 map('n', '<C-s>', ':Rg ')
 map('n', '<C-f>', '<Cmd>Files<CR>',    { silent = true })
