@@ -1,0 +1,124 @@
+{
+  "plugins": {
+    "auto-pairs": {
+      "rev": "39f06b873a8449af8ff6a3eee716d3da14d63a76",
+      "src": "https://github.com/jiangmiao/auto-pairs"
+    },
+    "barbar.nvim": {
+      "rev": "a4bef5b4fc1f064f2f673172252028eae18191c9",
+      "src": "https://github.com/romgrk/barbar.nvim"
+    },
+    "bats.vim": {
+      "rev": "19eb3c5a05aaa889647af8107a4518b3fb4a4711",
+      "src": "https://github.com/aliou/bats.vim"
+    },
+    "colorizer": {
+      "rev": "f5d69c0dea9f36e2eb025c7d86cc62b5a0d8af62",
+      "src": "https://github.com/chrisbra/colorizer"
+    },
+    "csv.vim": {
+      "rev": "ab776a6266593e9e0d8643cdb7e577f81c0eab7d",
+      "src": "https://github.com/chrisbra/csv.vim"
+    },
+    "earthly.vim": {
+      "rev": "cb0440a357a09fb9234ece56a6b09e04d25c1b1d",
+      "src": "https://github.com/earthly/earthly.vim"
+    },
+    "fzf": {
+      "rev": "263eb4732fc6268f9fb35cffb634903ea8e2a26b",
+      "src": "https://github.com/junegunn/fzf"
+    },
+    "fzf.vim": {
+      "rev": "b9624aa012ddcbae9e79964bfd30cc1fbe3cf263",
+      "src": "https://github.com/junegunn/fzf.vim"
+    },
+    "gitsigns.nvim": {
+      "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "131a558e13f9f28b15cd235557150ccb23f89286",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "nightfox.nvim": {
+      "rev": "26b61b1f856ec37cae3cb64f5690adb955f246a1",
+      "src": "https://github.com/EdenEast/nightfox.nvim"
+    },
+    "nvim-web-devicons": {
+      "rev": "2795c26c916bb3c57dde308b82be51971fa92747",
+      "src": "https://github.com/kyazdani42/nvim-web-devicons"
+    },
+    "plenary.nvim": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "symbols-outline.nvim": {
+      "rev": "564ee65dfc9024bdde73a6621820866987cbb256",
+      "src": "https://github.com/simrat39/symbols-outline.nvim"
+    },
+    "v-vim": {
+      "rev": "1dc1388bafb89072f8349dbd96f9462ae22237cb",
+      "src": "https://github.com/ollykel/v-vim"
+    },
+    "vim-abolish": {
+      "rev": "dcbfe065297d31823561ba787f51056c147aa682",
+      "src": "https://github.com/tpope/vim-abolish"
+    },
+    "vim-commentary": {
+      "rev": "64a654ef4a20db1727938338310209b6a63f60c9",
+      "src": "https://github.com/tpope/vim-commentary"
+    },
+    "vim-dadbod": {
+      "rev": "6d1d41da4873a445c5605f2005ad2c68c99d8770",
+      "src": "https://github.com/tpope/vim-dadbod"
+    },
+    "vim-eunuch": {
+      "rev": "e86bb794a1c10a2edac130feb0ea590a00d03f1e",
+      "src": "https://github.com/tpope/vim-eunuch"
+    },
+    "vim-fugitive": {
+      "rev": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0",
+      "src": "https://github.com/tpope/vim-fugitive"
+    },
+    "vim-gnupg": {
+      "rev": "f9b608f29003dfde6450931dc0f495a912973a88",
+      "src": "https://github.com/jamessan/vim-gnupg"
+    },
+    "vim-rails": {
+      "rev": "b0a5c76f86ea214ade36ab0b811e730c3f0add67",
+      "src": "https://github.com/tpope/vim-rails"
+    },
+    "vim-ranger": {
+      "rev": "055c3c6d95b10b073aad50ddcf364d1320752f84",
+      "src": "https://github.com/nickbutler/vim-ranger"
+    },
+    "vim-repeat": {
+      "rev": "65846025c15494983dafe5e3b46c8f88ab2e9635",
+      "src": "https://github.com/tpope/vim-repeat"
+    },
+    "vim-slim": {
+      "rev": "a0a57f75f20a03d5fa798484743e98f4af623926",
+      "src": "https://github.com/slim-template/vim-slim"
+    },
+    "vim-speeddating": {
+      "rev": "c17eb01ebf5aaf766c53bab1f6592710e5ffb796",
+      "src": "https://github.com/tpope/vim-speeddating"
+    },
+    "vim-surround": {
+      "rev": "3d188ed2113431cf8dac77be61b842acb64433d9",
+      "src": "https://github.com/tpope/vim-surround"
+    },
+    "vim-terraform": {
+      "rev": "520498fab16a3a11f2ae1b8cb65e0a1684bc317a",
+      "src": "https://github.com/hashivim/vim-terraform"
+    },
+    "vim-tig": {
+      "rev": "dcf1e73c8e2cfee38f4e676ec0afbcf84c8d016d",
+      "src": "https://github.com/nickbutler/vim-tig"
+    },
+    "vim-tmux-navigator": {
+      "rev": "e41c431a0c7b7388ae7ba341f01a0d217eb3a432",
+      "src": "https://github.com/christoomey/vim-tmux-navigator"
+    }
+  }
+}

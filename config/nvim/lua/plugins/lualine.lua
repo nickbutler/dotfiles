@@ -3,7 +3,7 @@ require('lualine').setup({
     theme = 'nordfox',
     component_separators = { left = '', right = '' },
     section_separators = { left = '', right = '' },
-    disabled_filetypes = { 'vim-plug', 'ranger', 'tig' },
+    disabled_filetypes = { 'ranger', 'tig' },
   },
   sections = {
     lualine_a = { 'mode' },
