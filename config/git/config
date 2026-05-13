@@ -1,7 +1,6 @@
 [user]
   name = Nick Butler
   email = nick@codeindulgence.com
-  signingkey = 08F7FFB6
 [core]
   excludesfile = ~/.config/git/ignore
   pager = delta
@@ -63,3 +62,6 @@
 	rebase = true
 [init]
 	defaultBranch = main
+
+[include]
+  path = ~/.config/git/config.local
