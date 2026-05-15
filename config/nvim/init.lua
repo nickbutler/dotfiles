@@ -144,6 +144,9 @@ vim.pack.add({
   gh('junegunn/fzf.vim'),
   gh('simrat39/symbols-outline.nvim'),
 
+  -- Markdown
+  gh('dhruvasagar/vim-table-mode'),
+
   -- Filetypes
   gh('slim-template/vim-slim'),
   gh('aliou/bats.vim'),
