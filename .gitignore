@@ -1,5 +1,5 @@
 config/**/*local*
-config/nvim/plugged
+config/nvim/pack/dev
 config/fish/fish_history
 config/fish/fish_variables
 config/fish/fish_read_history
