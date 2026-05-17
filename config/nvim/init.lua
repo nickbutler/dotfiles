@@ -129,20 +129,19 @@ local gh = function(x) return 'https://github.com/' .. x end
 vim.pack.add({
   -- Dependencies
   gh('nvim-lua/plenary.nvim'),
-  gh('kyazdani42/nvim-web-devicons'),
+  gh('nvim-tree/nvim-web-devicons'),
 
   -- Editing
   gh('tpope/vim-abolish'),
   gh('tpope/vim-repeat'),
-  gh('tpope/vim-surround'),
+  gh('kylechui/nvim-surround'),
   gh('tpope/vim-speeddating'),
-  gh('jiangmiao/auto-pairs'),
+  gh('windwp/nvim-autopairs'),
 
   -- Navigation / UI
   gh('romgrk/barbar.nvim'),
   gh('junegunn/fzf'),
   gh('junegunn/fzf.vim'),
-  gh('simrat39/symbols-outline.nvim'),
 
   -- Markdown
   gh('dhruvasagar/vim-table-mode'),
@@ -165,7 +164,7 @@ vim.pack.add({
   gh('tpope/vim-rails'),
   gh('tpope/vim-commentary'),
   gh('jamessan/vim-gnupg'),
-  gh('chrisbra/colorizer'),
+  gh('brenoprata10/nvim-highlight-colors'),
 
   -- Terminal / tmux
   gh('nickbutler/vim-ranger'),
@@ -265,10 +264,6 @@ vim.api.nvim_create_autocmd('User', {
 map('n', '<C-_>',  'gcc',  { remap = true })
 map('v', '<C-_>',  'gc',   { remap = true })
 map('n', '<C-\\>', 'gcip', { remap = true })
-vim.api.nvim_create_autocmd('FileType', {
-  pattern = 'terraform',
-  callback = function() vim.opt_local.commentstring = '# %s' end,
-})
 
 -- v-vim
 vim.g.v_autofmt_bufwritepre = 1
